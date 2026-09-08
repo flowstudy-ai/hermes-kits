@@ -9,6 +9,7 @@ A proposta não é criar uma plataforma paralela. Cada kit resolve um problema c
 | Ordem | Kit | O que resolve | Estado |
 |---|---|---|---|
 | 1 | [Hermes Knowledge Kit](https://github.com/flowstudy-ai/hermes-knowledge-kit) | Organiza Markdown como conhecimento recuperável, auditável e portátil | `v0.1.0` |
+| 2 | [Hermes Oracle Kit](https://github.com/flowstudy-ai/hermes-oracle-kit) | Consulta local a docs, skills e flows oficiais/comunitários, sob demanda e reversível | `v0.1.0` |
 
 ## Como escolher
 
