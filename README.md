@@ -1,58 +1,62 @@
 # FlowStudy · Trilha Hermes
 
-Uma coleção aberta de kits pequenos, verificáveis e reversíveis para quem usa o [Hermes Agent](https://hermes-agent.nousresearch.com/docs/).
+Peças soltas para quem usa o [Hermes Agent](https://hermes-agent.nousresearch.com/docs/). Instala uma. Não leva a loja inteira. Não é outro Hermes.
 
-A proposta não é criar uma plataforma paralela. Cada kit resolve um problema concreto, instala de forma isolada e pode ser removido sem sequestrar o ambiente do usuário.
+Duas gavetas: **kit** (encaixa e tira) e **receita** (jeito do agente escrever/agir).
 
-## Comece aqui
+## Kits
 
-| Ordem | Kit | O que resolve | Estado |
-|---|---|---|---|
-| 1 | [Hermes Knowledge Kit](https://github.com/flowstudy-ai/hermes-knowledge-kit) | Organiza Markdown como conhecimento recuperável, auditável e portátil | `v0.1.0` |
-| 2 | [Hermes Oracle Kit](https://github.com/flowstudy-ai/hermes-oracle-kit) | Consulta local a docs, skills e flows oficiais/comunitários, sob demanda e reversível | `v0.1.0` |
+Peça com `doctor`, dry-run, instalar e desinstalar.
+
+| | O que você ganha | Estado |
+|---|---|---|
+| [Knowledge](https://github.com/flowstudy-ai/hermes-knowledge-kit) | Seus `.md` ficam organizados para o agente achar de novo. | `v0.1.0` |
+| [Oracle](https://github.com/flowstudy-ai/hermes-oracle-kit) | O agente consulta a documentação do Hermes nesta máquina, sem inventar. Dá para tirar depois. | `v0.1.0` |
+
+## Receitas
+
+Skill + texto. Sem instalador que finja ligar WhatsApp ou conta.
+
+| | O que você ganha | Estado |
+|---|---|---|
+| [Briefing de grupos WhatsApp](https://github.com/flowstudy-ai/hermes-recipes/tree/main/whatsapp-briefing) | Um recado por dia, em português claro, a partir do que entrou nos grupos. Chip, QR e ToS são com você. | `v0.1.0` |
+
+O catálogo: [hermes-recipes](https://github.com/flowstudy-ai/hermes-recipes).
 
 ## Como escolher
 
-1. Abra o repositório do kit.
-2. Leia requisitos e limitações.
-3. Execute primeiro o diagnóstico e o dry-run.
-4. Instale em ambiente descartável se estiver avaliando.
-5. Só depois aplique no profile desejado.
+1. Leia o que o repo **não** faz.
+2. Kit: rode o diagnóstico e o dry-run numa pasta de teste.
+3. Receita: copie a skill; não espere um botão mágico.
+4. Só então use no Hermes de verdade.
 
-## Princípios da trilha
+Não force receita a virar kit.
 
-- **Um problema por kit:** releases, testes e issues independentes.
-- **Reversível:** uninstall e rollback fazem parte do produto.
-- **Fail-closed:** dúvida de segurança termina com erro, não com falsa aprovação.
-- **Sem segredos:** exemplos fictícios e scanner antes de publicação.
-- **Poucas dependências:** biblioteca padrão quando suficiente.
-- **Prova antes de promessa:** cada kit documenta o que foi realmente testado.
+## Regras
 
-## Próximos kits
+- Um problema por repo.
+- Dá para desfazer (kit) ou é só arquivo (receita).
+- Na dúvida de segurança, para — não aprova no escuro.
+- Sem senha, número real ou conversa no git.
+- O README diz o que foi testado de verdade.
 
-Ideias em avaliação, não promessas de entrega:
-
-- backup sanitizado e verificável;
-- diagnóstico de segurança;
-- organização de produção de conteúdo;
-- rotinas de saúde e manutenção do Hermes.
-
-## Convenção dos repositórios
+## Nome dos repos
 
 ```text
-hermes-<problema>-kit
+hermes-<problema>-kit      # instalador
+hermes-recipes             # catálogo de receitas
 ```
 
-Cada projeto deve conter README, licença, política de segurança, contribuição, changelog, testes e CI. Um kit só aparece nesta trilha quando houver artefato funcional e instrução de reversão.
+Um kit só entra na tabela quando existir artefato e jeito de tirar. Uma receita só entra quando skill + prompt + limites existirem.
 
 ## Participar
 
-Abra uma issue no repositório específico para bugs ou sugestões. Discussões sobre a trilha e propostas de novos kits podem ser abertas neste portal.
+Issue no repo do item. Conversa sobre a trilha: issue neste portal.
 
 ## Independência
 
-FlowStudy é uma iniciativa independente. Hermes Agent é um projeto da Nous Research e não faz parte desta organização.
+FlowStudy é independente. Hermes Agent é da Nous Research.
 
 ## Licença
 
-Conteúdo deste portal sob licença MIT.
+MIT.
