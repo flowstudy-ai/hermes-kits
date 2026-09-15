@@ -20,6 +20,7 @@ Skill + texto. Sem instalador que finja ligar WhatsApp ou conta.
 | | O que você ganha | Estado |
 |---|---|---|
 | [Briefing de grupos WhatsApp](https://github.com/flowstudy-ai/hermes-recipes/tree/main/whatsapp-briefing) | Um recado por dia, em português claro, a partir do que entrou nos grupos. Chip, QR e ToS são com você. | `v0.1.0` |
+| [Escada de pesquisa web](https://github.com/flowstudy-ai/hermes-recipes/tree/main/web-research-ladder) | Busca de graça, página paga, arquivo se bloquear. Não queima scrape na busca. | `v0.1.0` |
 
 O catálogo: [hermes-recipes](https://github.com/flowstudy-ai/hermes-recipes).
 
